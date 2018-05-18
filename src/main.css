@@ -18,7 +18,7 @@ nav {
   width: 100vw;
 
   /* remaining styles */
-  background-color: #677db7;
+  background-color: rgba(103, 125, 183, 1);
   font-size: 2.5em;
   display: flex;
   justify-content: space-between;
@@ -106,9 +106,19 @@ section {
   margin: 0 1vw;
 }
 
-/* On screens that are 600px or less, apply these styles */
-@media screen and (max-width: 600px) {
-  nav a {
-    font-size: 0.7em;
+@media screen and (max-width: 825px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(103, 125, 183, 0.8);
+  }
+  .hero-img {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #about {
+    height: 70vh;
   }
 }
