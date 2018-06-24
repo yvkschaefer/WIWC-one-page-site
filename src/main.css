@@ -45,8 +45,9 @@ nav a {
   transform: scale(1.1);
 }
 .hero-img {
-  height: 50vh;
-  margin-top: 68px;
+  height: 51vh;
+  margin-top: 56px;
+  width: 100vw;
 }
 section {
   padding-top: 70px;
@@ -108,9 +109,10 @@ section {
 
 @media screen and (max-width: 825px) {
   nav {
-    display: flex;
-    flex-direction: column;
     background-color: rgba(103, 125, 183, 0.8);
+  }
+  nav a {
+    font-size: 0.6em;
   }
   .hero-img {
     margin-top: 0;
@@ -118,6 +120,10 @@ section {
 }
 
 @media screen and (max-width: 465px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
   #about {
     height: 70vh;
   }
